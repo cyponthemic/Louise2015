@@ -1,0 +1,22 @@
+#header-parallax{
+	
+	height: 45vw;
+	background-size:  100% auto;
+	background-color: pink;
+	position: relative;
+	
+	.inner-table{
+		display: table;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding-top: 17vw;
+	
+		h1{
+			font-weight: bolder;
+			color: white;
+			font-size: 8vw;
+			text-transform: uppercase;
+		}
+	}
+}

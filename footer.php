@@ -11,5 +11,10 @@
 </div>
 <?php wp_footer(); ?>
 <?php do_action('foundationPress_before_closing_body'); ?>
+
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/skrollr.min.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+    </script>
 </body>
 </html>

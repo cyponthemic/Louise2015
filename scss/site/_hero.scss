@@ -18,3 +18,157 @@
 
 		.download { margin-top: rem-calc(20); }
 	}
+.hero{
+	
+	article{
+		margin-top: 100px;
+		margin-bottom: 100px;
+		h1 {
+			text-transform: uppercase;
+			font-weight: lighter;
+			margin-top: 50px;
+			margin-bottom: 25px;
+		}
+	}
+	.entry-title{
+		font-size: 18px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.entry-content{
+		text-align: center;
+	}
+}
+.recap{
+	.titre{
+				color: black;
+				font-size: 24px;
+				font-weight: bolder;
+							}
+	.page-link{
+		margin-bottom: 50px;
+		display: block;
+		background-size: cover;
+		background-position: center center;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		
+		.overlay{
+			opacity: 0;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255,255,255,0.8);
+			h1{
+				color: black;
+				font-size: 24px;
+				font-weight: bolder;
+				text-transform: uppercase;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+			}
+		}
+		&:hover{
+		.overlay{
+			opacity: 1;
+		}	
+		}
+	}
+	.about-page{
+		height: 300px;
+		background-color: pink;
+		background-image: url('../assets/img/home/about.png');
+	}
+	.featured-page{
+		height: 300px;
+		background-color: pink;
+	}
+	.projects-page{
+		height: 500px;
+		background-color: yellow;
+		background-image: url('../assets/img/home/project.jpg');
+	}
+	.contact-page{
+		height: 300px;
+		background-color: orange;
+		background-image: url('../assets/img/home/contact.png');
+	}
+}
+
+.planche{
+	
+	margin-bottom: 50px;
+	h1{
+		font-size: 18px;
+		margin-bottom:  25px;
+		text-transform: uppercase;
+		font-weight: bolder;
+		text-align: center;
+	}
+	img{
+		width: 100%;
+	}
+}
+.dossier{
+	border: solid black 3px;
+	padding: 50px;
+	h1{
+		font-size: 18px;
+		margin-bottom:  50px;
+		text-transform: uppercase;
+		font-weight: bolder;
+		text-align: center;
+	}
+	iframe{
+		width: 60%;
+		margin-left: 20%;
+	}
+}
+.project-image{
+	position: relative;
+	margin-bottom: 100px;
+	height: 400px;
+	background-size: 100%;
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.project-description{
+		position: absolute;
+		z-index: 10;
+	
+		padding: 25px;
+		bottom : 0%;
+		right: 0%;
+		max-width: 50%;
+		
+		
+		h1{
+			font-size: 50px;
+			margin-bottom:  0px;
+			text-transform: uppercase;
+			font-weight: bolder;
+			text-align: left;
+			padding: 25px;
+			color: white;
+			background-color:black;
+			width: auto;
+		}
+		p{
+		color: black;
+		background-color:white;
+		font-size: 24px;	
+		
+		font-weight: normal;
+		text-align: center;
+		
+		}
+		.more-link{
+			display: none;
+		}
+		
+	}
+}

@@ -20,7 +20,7 @@
 		} else {
 			echo wp_title( ' | ', 'false', 'right' ); bloginfo( 'name' );
 		} ?></title>
-		
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,800' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/foundation.css" />
 
 		<link rel="icon" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/favicon.ico" type="image/x-icon">
@@ -39,20 +39,22 @@
 	
 	<?php do_action('foundationPress_layout_start'); ?>
 	
-	<nav class="tab-bar show-for-small-only">
+	<nav class="tab-bar">
 		<section class="left-small">
-			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+			<a class="right-off-canvas-toggle" href="#"><span>MENU</span></a>
 		</section>
-		<section class="middle tab-bar-section">
+		<section style="display:none;"class="middle tab-bar-section">
 			
 			<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
 
 		</section>
 	</nav>
+	<?php get_template_part('parts/header-parallax'); ?>
+	
 
 	<?php get_template_part('parts/off-canvas-menu'); ?>
 
-	<?php get_template_part('parts/top-bar'); ?>
+	
 
 <section class="container" role="document">
 	<?php do_action('foundationPress_after_header'); ?>
