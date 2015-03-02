@@ -8,7 +8,7 @@
 ?>
 <?php
 	//define background
-	$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 		'full', false, '' );
+	$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 		'large', false, '' );
 ?>
 <section id="header-parallax" style="background-image:url(<?php echo $src[0];?>);"
 data-0="background-position: 50% 100%;"

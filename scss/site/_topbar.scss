@@ -19,13 +19,13 @@
 .tab-bar{
 	position: absolute;
 	z-index: 5;
-	line-height: 4rem;
+	line-height: 4.5rem;
 	.left-small{
 	width: 4.25rem;
 	height: 4.25rem;
 	position: fixed;
 	top: 50px;
-	border: solid 3px white;
+	/* border: solid 3px white; */
 	left: auto !important;
 	right: 50px !important;
 	

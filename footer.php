@@ -15,6 +15,11 @@
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/skrollr.min.js"></script>
     <script type="text/javascript">
     var s = skrollr.init();
+    
+    $('.right-off-canvas-toggle').click(function(){
+    	$("html, body").animate({ scrollTop: 0 }, 600);
+		
+		});
     </script>
 </body>
 </html>
