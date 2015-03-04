@@ -24,11 +24,12 @@
 					'numberposts' => -1,					
 					'order' => 'ASC',
 					'orderby' => 'meta_value_num',
-					'meta_key'=>'wpcf-pages'
-					
+					'meta_key'=>'wpcf-pages',
+					'meta_query' => array(array('key' => '_wpcf_belongs_project_id', 'value' => get_the_ID()))
 					);
 				
 			    
+				
 				$child_posts = get_posts($childargs);
 				
 				
