@@ -17,8 +17,10 @@ data-500="background-position: 50% 0%;"
 	<div class="inner-table" >
 		
 		<h1><?php echo $bigtitle; ?></h1>
-		<?php if(is_front_page()):?>
+		<?php if(is_front_page() or is_page('louise')):?>
+		
 		<h2 class="sub-header-front">Stylisme & Modélisme</h2>
+		
 		<?php endif;?>
 	</div>
 </section>
